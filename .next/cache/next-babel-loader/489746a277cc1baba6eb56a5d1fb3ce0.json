@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var isBrowser = process.browser;","map":{"version":3,"sources":["C:\\git\\whatabyte\\lib\\isBrowser.ts"],"names":["isBrowser","process","browser"],"mappings":"AAAA,OAAO,IAAMA,SAAkB,GAAIC,OAAD,CAAiBC,OAA5C","sourcesContent":["export const isBrowser: boolean = (process as any).browser;\r\n"]},"metadata":{},"sourceType":"module"}
