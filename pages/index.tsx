@@ -13,9 +13,6 @@ const Index = () => {
 		}
 	`);
 
-	console.log(loading);
-	console.log(error);
-	console.log(data);
 	return (
 		<Layout>
 			{' '}
@@ -25,7 +22,7 @@ const Index = () => {
 			</Link>
 			{loading && <p>Loading...</p>}
 			{error && <p>Error: {error}</p>}
-			{data && (
+			{data && data.allUsers && (
 				<ul>
 					{data.allUsers.map(user => (
 						<li>{user.email}</li>

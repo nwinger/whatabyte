@@ -33232,57 +33232,54 @@ var Index = function Index() {
       error = _useQuery.error,
       data = _useQuery.data;
 
-  console.log(loading);
-  console.log(error);
-  console.log(data);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: this
   }, ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/explore",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 21
     },
     __self: this
   }, " Welcome to WHATABYTE! Start Exploring Now")), loading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 23
     },
     __self: this
   }, "Loading..."), error && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     },
     __self: this
-  }, "Error: ", error), data && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+  }, "Error: ", error), data && data.allUsers && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 26
     },
     __self: this
   }, data.allUsers.map(function (user) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 28
       },
       __self: this
     }, user.email);
