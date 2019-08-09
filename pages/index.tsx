@@ -7,11 +7,13 @@ import Layout from '../components/Layout';
 const Index = () => {
 	const { loading, error, data } = useQuery(gql`
 		{
-			allUsers {
-				email
+			pokemon(name: "Pikachu") {
+				name
 			}
 		}
 	`);
+
+	console.log(data);
 
 	return (
 		<Layout>
@@ -22,13 +24,7 @@ const Index = () => {
 			</Link>
 			{loading && <p>Loading...</p>}
 			{error && <p>Error: {error}</p>}
-			{data && data.allUsers && (
-				<ul>
-					{data.allUsers.map(user => (
-						<li>{user.email}</li>
-					))}
-				</ul>
-			)}
+			<div>{data && data.pokemon && <p>{data.pokemon.name}</p>}</div>
 		</Layout>
 	);
 };

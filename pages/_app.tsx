@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app';
 import React from 'react';
 
-import withApollo from '../lib/withApollo';
+import withApolloClient from '../lib/withApollo';
 import { ApolloProvider } from '@apollo/react-hooks';
 
 class MyApp extends App<any> {
@@ -17,4 +17,4 @@ class MyApp extends App<any> {
 	}
 }
 
-export default withApollo(MyApp);
+export default withApolloClient(MyApp);
